@@ -1,0 +1,100 @@
+@import "variables";
+
+body {
+  background: $background;
+}
+
+a, button {
+  color: $common-text;
+}
+
+.container {
+  position: relative;
+  color: $common-text;
+}
+
+.settings-panel {
+  display: block;
+  margin-bottom: 1rem;
+  &-button {
+    border: none;
+    position: absolute;
+    right: 5rem;
+    padding: 10px 15px;
+    background: $button-background;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    &:hover {
+      cursor: pointer;
+      background: darken($button-background, 10%);
+    }
+  }
+}
+
+.tweets-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tweet {
+  margin: 1rem 0;
+  display: flex;
+  position: relative;
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+  background: $tweet-background;
+
+  &-link {
+    font-size: 20px;
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+
+    &:hover {
+      color: $title-hover;
+    }
+  }
+
+  &-text {
+    font-size: 20px;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+  }
+
+  &-follow {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    padding: 10px 15px;
+    background: $button-background;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+      background: darken($button-background, 10%);
+    }
+  }
+
+  &-user-followers {
+    position: absolute;
+    top: 13rem;
+    left: 2rem;
+    font-size: 20px;
+  }
+
+  &-time {
+    font-size: 15px;
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+  }
+}
+
+
